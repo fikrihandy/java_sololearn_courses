@@ -20,7 +20,7 @@ class Bowling {
     HashMap<String, Integer> players;
 
     Bowling() {
-        players = new HashMap<String, Integer>();
+        players = new HashMap<>();
     }
 
     public void addPlayer(String name, int p) {
@@ -34,11 +34,10 @@ class Bowling {
             valueArr[start] = players.get(i);
             start++;
         }
-        OptionalInt winner = Arrays.stream(valueArr).max();
-        int winnerInt = winner.getAsInt();
+        int winner = Arrays.stream(valueArr).max().getAsInt();
 
         for (String i : players.keySet()) {
-            if (players.get(i) == winnerInt) {
+            if (players.get(i) == winner) {
                 System.out.println(i);
             }
         }
