@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Arrays {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Your Text = ");
         String text = scanner.nextLine();
         char[] arr = text.toCharArray();
         // Reverse a String
@@ -12,6 +13,7 @@ public class Arrays {
             reverseArr[j] = arr[i];
             j++;
         }
+        System.out.println("Reverse = ");
         System.out.println(reverseArr);
     }
 }

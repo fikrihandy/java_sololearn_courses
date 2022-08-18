@@ -1,9 +1,11 @@
-import java.util.*;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Scanner;
 
 public class ExceptionsListThreadsAndFiles {
     public static void main(String[] args) {
         Bowling game = new Bowling();
+        System.out.print("Sample Input (3 player max):\nDave 42\n=======\n");
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
             String input = sc.nextLine();
@@ -38,7 +40,7 @@ class Bowling {
 
         for (String i : players.keySet()) {
             if (players.get(i) == winner) {
-                System.out.println(i);
+                System.out.println("Winner => " + i);
             }
         }
     }

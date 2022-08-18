@@ -14,7 +14,7 @@ class Square extends Shape {
 
     @Override
     void area() {
-        System.out.println(width * width);
+        System.out.println("Luas persegi = " + (width * width));
     }
 }
 
@@ -26,14 +26,16 @@ class Circle extends Shape {
 
     @Override
     void area() {
-        System.out.println(Math.PI * width * width);
+        System.out.println("Luas lingkaran = " + (Math.PI * width * width));
     }
 }
 
 public class MoreOnClasses {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Sisi persegi = ");
         int square = sc.nextInt();
+        System.out.print("Jari-jari lingkaran = ");
         int circle = sc.nextInt();
 
         Square a = new Square(square);

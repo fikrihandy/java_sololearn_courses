@@ -15,8 +15,9 @@ class Converter {
 public class ClassesAndObjects {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Number (integer) = ");
         int x = sc.nextInt();
-        System.out.print(Converter.toBinary(x));
+        System.out.print("Binary = " + Converter.toBinary(x));
     }
 }
 
